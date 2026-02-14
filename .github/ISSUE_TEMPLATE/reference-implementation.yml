@@ -1,0 +1,45 @@
+name: Reference implementation
+description: Propose an ATP implementation guide for a specific framework
+title: "[Reference] "
+labels:
+  - reference
+body:
+  - type: input
+    id: framework
+    attributes:
+      label: Framework
+      placeholder: "OpenClaw, LangChain, CrewAI, custom runtime"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Implementation summary
+      description: How ATP is implemented in this framework
+    validations:
+      required: true
+
+  - type: textarea
+    id: enforcement
+    attributes:
+      label: Enforcement model
+      description: Prompt-level, framework-level, gateway-level, or hybrid?
+    validations:
+      required: true
+
+  - type: textarea
+    id: compliance
+    attributes:
+      label: Compliance validation
+      description: How can users verify ATP compliance in this framework?
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I can contribute a markdown guide under `reference/`.
+          required: true
+        - label: I separated framework-specific behavior from ATP requirements.
+          required: true

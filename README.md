@@ -1,5 +1,11 @@
 # Agent Transparency Protocol (ATP)
 
+[![Spec](https://img.shields.io/badge/spec-ATP--1-blue)](spec/ATP-1.md)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Governance](https://img.shields.io/badge/governance-documented-orange)](GOVERNANCE.md)
+[![Code of Conduct](https://img.shields.io/badge/code%20of%20conduct-Contributor%20Covenant-ff69b4)](CODE_OF_CONDUCT.md)
+
 **Humans have the right to know when they are interacting with an AI agent.**
 
 ATP is a framework-agnostic standard for AI agents to self-disclose their nature, operator, capabilities, and purpose when interacting on external platforms like GitHub, Discord, Slack, Telegram, and more.
@@ -130,6 +136,14 @@ ATP is an open standard. Contributions are welcome:
 2. **Platform examples** — Add examples for platforms not yet covered
 3. **Reference implementations** — Add implementation guides for other agent frameworks
 4. **Translations** — Help make ATP accessible in other languages
+
+Before contributing, please read:
+
+- [CONTRIBUTING.md](CONTRIBUTING.md)
+- [GOVERNANCE.md](GOVERNANCE.md)
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- [SECURITY.md](SECURITY.md)
+- [CHANGELOG.md](CHANGELOG.md)
 
 ---
 

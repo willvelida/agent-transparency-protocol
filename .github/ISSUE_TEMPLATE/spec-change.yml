@@ -1,0 +1,59 @@
+name: Spec change proposal
+description: Propose a normative or non-normative change to the ATP specification
+title: "[Spec] "
+labels:
+  - spec
+  - proposal
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a spec change. Please be specific and reference relevant ATP sections.
+
+  - type: input
+    id: section
+    attributes:
+      label: Spec section(s)
+      description: Which sections are impacted? (e.g., §2.4, §3.2)
+      placeholder: "§2.4 Model, §5 Compliance"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem does this change solve?
+      placeholder: Describe the interoperability, adoption, or clarity problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: What exact change are you proposing?
+      placeholder: Include exact wording if possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact analysis
+      description: Who is affected? Any backward compatibility concerns?
+      placeholder: Framework developers, operators, platform integrators, etc.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues/discussions first.
+          required: true
+        - label: I referenced impacted ATP section(s).
+          required: true
+        - label: I described potential implementation impact.
+          required: true

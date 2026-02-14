@@ -1,0 +1,46 @@
+name: Platform example request
+description: Request or propose an ATP example for a platform
+title: "[Example] "
+labels:
+  - examples
+body:
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      placeholder: "Microsoft Teams, Matrix, Reddit, etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Why this platform matters
+      description: Why should ATP cover this platform?
+    validations:
+      required: true
+
+  - type: textarea
+    id: disclosure
+    attributes:
+      label: Disclosure mechanics
+      description: How can HRD/MRD be expressed on this platform?
+      placeholder: Visible footer, metadata fields, profile fields, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Platform docs or examples (links)
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I checked existing examples first.
+          required: true
+        - label: I provided platform-specific constraints.
+          required: true
